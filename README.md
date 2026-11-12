@@ -125,7 +125,7 @@ Antes de iniciar, verifique se você possui instalado em sua máquina:
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/ai-organize.git
+git clone https://github.com/lorranesmmartins-dot/ai-organize.git
 cd ai-organize
 ```
 

@@ -51,7 +51,7 @@ A plataforma atua como um assistente consultivo: **nenhum dado é gravado automa
    - **Prevenção de Alucinações:** Valores ou vencimentos conflitantes nunca são arbitrados pela IA; o sistema sinaliza divergências e exige a decisão humana.
 
 4. **Regras Locais de Validação e Identificação de Divergências:**
-   - Modo de contingência que funciona **100% offline**, através de heurísticas contábeis e expressões regulares locais.
+   - Modo de contingência com validações locais, utilizando heurísticas contábeis e expressões regulares, sem depender da API Gemini.
    - Detecção automatizada de divergências monetárias e de vencimento entre diferentes seções do mesmo documento.
 
 5. **Auditoria e Detecção de Duplicidades:**

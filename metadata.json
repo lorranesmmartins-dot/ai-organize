@@ -1,0 +1,6 @@
+{
+  "name": "Organiza AI",
+  "description": "Assistente administrativo e financeiro para organização e validação de pagamentos de fornecedores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

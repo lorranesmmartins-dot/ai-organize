@@ -116,7 +116,7 @@ O sistema é construído como uma aplicação full-stack modular:
 ## 📋 Pré-requisitos
 
 Antes de iniciar, verifique se você possui instalado em sua máquina:
-- **Node.js** (versão 18.0.0 ou superior — recomendado 20.x ou 22.x LTS);
+- **Node.js** (versão 20.19.0 ou superior, ou 22.12.0 ou superior);
 - **npm** (gerenciador de pacotes incluso no Node.js).
 
 ---

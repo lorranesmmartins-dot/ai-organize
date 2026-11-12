@@ -171,7 +171,7 @@ Todos os comandos devem ser executados a partir da raiz do projeto:
 ## 🔒 Armazenamento e Privacidade
 
 - **Armazenamento no Navegador:** Os registros financeiros são armazenados localmente no navegador do usuário via `localStorage` (sob a chave `organiza_ai_pagamentos_v1`).
-- **Sem Telemetria ou Rastreamento:** A aplicação não envia dados contábeis a servidores externos de analytics ou telemetria.
+- **Integração com IA:** Quando o usuário utiliza a extração inteligente, o conteúdo do documento é enviado à API Google Gemini para processamento. Essa funcionalidade depende de conexão com a internet e de uma chave de API válida.
 - **Responsabilidade de Backup:** Como os dados ficam armazenados no navegador do cliente, é recomendável utilizar regularmente a funcionalidade de **Backup de Segurança (JSON)** localizada no painel principal para exportar e resguardar seus registros.
 
 ---

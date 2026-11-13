@@ -157,6 +157,8 @@ PORT=3000
 
 Todos os comandos devem ser executados a partir da raiz do projeto:
 
+Para executar em produção, primeiro gere os arquivos de build com `npm run build` e depois inicie o servidor com `npm start`.
+
 | Comando | Descrição |
 | :--- | :--- |
 | `npm run dev` | Inicia o servidor Express integrado ao Vite em modo de desenvolvimento (porta 3000). |

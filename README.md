@@ -10,6 +10,7 @@ O **Organiza AI** é uma solução completa projetada para otimizar o fluxo de c
 
 - [Visão Geral e Objetivo](#visão-geral-e-objetivo)
 - [Principais Funcionalidades](#principais-funcionalidades)
+- [Ecossistema AI Finance Hub](#ecossistema-ai-finance-hub)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Pré-requisitos](#pré-requisitos)
@@ -63,9 +64,29 @@ A plataforma atua como um assistente consultivo: **nenhum dado é gravado automa
    - Distribuição de despesas por status de quitação.
    - Exportação em formato CSV compatível com planilhas e sistemas ERP.
 
-7. **Backup e Restauração Segura (JSON):**
+7. **AI Insights — Assistente de Inteligência Financeira:**
+   - Chatbot integrado para consultas em linguagem natural sobre os lançamentos financeiros.
+   - Identificação de fornecedores com maiores valores em aberto.
+   - Consulta de pagamentos atrasados e vencimentos próximos.
+   - Identificação de inconsistências e dados incompletos.
+   - Recomendações de prioridades com base nos registros disponíveis.
+   - Respostas fundamentadas nos dados da aplicação, respeitando as regras de classificação financeira.
+
+8. **Backup e Restauração Segura (JSON):**
    - Download imediato de cópia integral da base ativa em formato JSON.
    - Restauração validada com proteção da estrutura e integridade dos registros.
+
+---
+
+## 🔄 Ecossistema AI Finance Hub
+
+O AI Finance Hub integra três componentes complementares:
+
+- **AI Organize:** gestão de documentos, fornecedores e pagamentos.
+- **AI Flow:** automação com n8n para recebimento, extração e validação de notas fiscais, registro em planilha e alertas de vencimento.
+- **AI Insights:** assistente inteligente para consultas, identificação de inconsistências e apoio à tomada de decisão financeira.
+
+Os projetos foram desenvolvidos para demonstrar como inteligência artificial e automação podem apoiar processos administrativos e financeiros.
 
 ---
 
@@ -125,7 +146,7 @@ Antes de iniciar, verifique se você possui instalado em sua máquina:
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/ai-organize.git
+git clone https://github.com/lorranesmmartins-dot/ai-organize.git
 cd ai-organize
 ```
 

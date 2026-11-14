@@ -15,6 +15,7 @@ import {
   Plus,
   X,
   CheckCircle2,
+  TrendingUp,
 } from 'lucide-react';
 import { ActiveTabType } from './Header';
 
@@ -50,6 +51,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
       id: 'todos',
       label: 'Painel Financeiro',
       icon: LayoutDashboard,
+    },
+    {
+      id: 'insights',
+      label: 'AI Insights',
+      icon: TrendingUp,
     },
     {
       id: 'relatorios',

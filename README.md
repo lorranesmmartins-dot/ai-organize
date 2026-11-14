@@ -51,7 +51,7 @@ A plataforma atua como um assistente consultivo: **nenhum dado é gravado automa
    - **Prevenção de Alucinações:** Valores ou vencimentos conflitantes nunca são arbitrados pela IA; o sistema sinaliza divergências e exige a decisão humana.
 
 4. **Regras Locais de Validação e Identificação de Divergências:**
-   - Modo de contingência com validações locais, utilizando heurísticas contábeis e expressões regulares, sem depender da API Gemini.
+   - Modo de contingência que funciona **100% offline**, através de heurísticas contábeis e expressões regulares locais.
    - Detecção automatizada de divergências monetárias e de vencimento entre diferentes seções do mesmo documento.
 
 5. **Auditoria e Detecção de Duplicidades:**
@@ -116,7 +116,7 @@ O sistema é construído como uma aplicação full-stack modular:
 ## 📋 Pré-requisitos
 
 Antes de iniciar, verifique se você possui instalado em sua máquina:
-- **Node.js** (versão 20.19.0 ou superior, ou 22.12.0 ou superior);
+- **Node.js** (versão 18.0.0 ou superior — recomendado 20.x ou 22.x LTS);
 - **npm** (gerenciador de pacotes incluso no Node.js).
 
 ---
@@ -125,7 +125,7 @@ Antes de iniciar, verifique se você possui instalado em sua máquina:
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/lorranesmmartins-dot/ai-organize.git
+git clone https://github.com/seu-usuario/ai-organize.git
 cd ai-organize
 ```
 
@@ -157,8 +157,6 @@ PORT=3000
 
 Todos os comandos devem ser executados a partir da raiz do projeto:
 
-Para executar em produção, primeiro gere os arquivos de build com `npm run build` e depois inicie o servidor com `npm start`.
-
 | Comando | Descrição |
 | :--- | :--- |
 | `npm run dev` | Inicia o servidor Express integrado ao Vite em modo de desenvolvimento (porta 3000). |
@@ -173,7 +171,7 @@ Para executar em produção, primeiro gere os arquivos de build com `npm run bui
 ## 🔒 Armazenamento e Privacidade
 
 - **Armazenamento no Navegador:** Os registros financeiros são armazenados localmente no navegador do usuário via `localStorage` (sob a chave `organiza_ai_pagamentos_v1`).
-- **Integração com IA:** Quando o usuário utiliza a extração inteligente, o conteúdo do documento é enviado à API Google Gemini para processamento. Essa funcionalidade depende de conexão com a internet e de uma chave de API válida.
+- **Sem Telemetria ou Rastreamento:** A aplicação não envia dados contábeis a servidores externos de analytics ou telemetria.
 - **Responsabilidade de Backup:** Como os dados ficam armazenados no navegador do cliente, é recomendável utilizar regularmente a funcionalidade de **Backup de Segurança (JSON)** localizada no painel principal para exportar e resguardar seus registros.
 
 ---

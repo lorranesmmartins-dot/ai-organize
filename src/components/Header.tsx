@@ -4,10 +4,11 @@
  */
 
 import React from 'react';
-import { Plus, Menu, LayoutDashboard, BarChart3, Sparkles, FileText, BrainCircuit, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { Plus, Menu, LayoutDashboard, BarChart3, Sparkles, FileText, BrainCircuit, AlertTriangle, ShieldCheck, TrendingUp } from 'lucide-react';
 
 export type ActiveTabType =
   | 'todos'
+  | 'insights'
   | 'relatorios'
   | 'prioridades'
   | 'extracao'
@@ -32,6 +33,11 @@ const MODULE_TITLES: Record<
     title: 'Painel Financeiro',
     subtitle: 'Acompanhamento operacional de pagamentos e fornecedores',
     icon: LayoutDashboard,
+  },
+  insights: {
+    title: 'AI Insights',
+    subtitle: 'Painel de inteligência financeira e consultas sobre os lançamentos cadastrados',
+    icon: TrendingUp,
   },
   relatorios: {
     title: 'Relatórios Financeiros',

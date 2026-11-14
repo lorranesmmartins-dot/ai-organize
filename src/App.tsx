@@ -17,6 +17,7 @@ import { IntelligentAnalysis } from './components/IntelligentAnalysis';
 import { InvoiceExtractor } from './components/InvoiceExtractor';
 import { FinancialPrioritiesAssistant } from './components/FinancialPrioritiesAssistant';
 import { FinancialReports } from './components/FinancialReports';
+import { AIInsights } from './components/AIInsights';
 import { PaymentRecord, PaymentStatus, validatePaymentRecord } from './types/payment';
 import { INITIAL_PAYMENTS } from './data/initialPayments';
 import { findDuplicatePayment } from './utils/duplicateDetector';
@@ -392,7 +393,9 @@ export default function App() {
           {/* Contexto Mobile (Cabeçalho principal no Header.tsx) */}
           <div className="lg:hidden">
             <h1 className="text-base font-bold text-[#172033]">
-              {activeTab === 'relatorios'
+              {activeTab === 'insights'
+                ? 'AI Insights'
+                : activeTab === 'relatorios'
                 ? 'Relatórios Financeiros'
                 : activeTab === 'prioridades'
                 ? 'Assistente de Prioridades'
@@ -429,8 +432,13 @@ export default function App() {
           onClearFilter={() => setCompletenessFilter('todos')}
         />
 
-        {/* Visualização de Abas: Painel Tabela vs Relatórios vs Prioridades vs Extrair NF vs Análise vs Auditoria */}
-        {activeTab === 'relatorios' ? (
+        {/* Visualização de Abas: Painel Tabela vs AI Insights vs Relatórios vs Prioridades vs Extrair NF vs Análise vs Auditoria */}
+        {activeTab === 'insights' ? (
+          <AIInsights
+            payments={payments}
+            onEditPayment={handleEditPayment}
+          />
+        ) : activeTab === 'relatorios' ? (
           <FinancialReports
             payments={payments}
             onEditPayment={handleEditPayment}

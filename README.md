@@ -8,17 +8,17 @@ O **Organiza AI** é uma solução completa projetada para otimizar o fluxo de c
 
 ## 📑 Sumário
 
-- [Visão Geral e Objetivo](#visão-geral-e-objetivo)
-- [Principais Funcionalidades](#principais-funcionalidades)
-- [Ecossistema AI Finance Hub](#ecossistema-ai-finance-hub)
-- [Arquitetura do Sistema](#arquitetura-do-sistema)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação e Configuração](#instalação-e-configuração)
-- [Scripts Disponíveis](#scripts-disponíveis)
-- [Armazenamento e Privacidade](#armazenamento-e-privacidade)
-- [Avisos e Dados de Demonstração](#avisos-e-dados-de-demonstração)
-- [Licença](#licença)
+- [Visão Geral e Objetivo](#-visão-geral-e-objetivo)
+- [Principais Funcionalidades](#-principais-funcionalidades)
+- [Ecossistema AI Finance Hub](#-ecossistema-ai-finance-hub)
+- [Arquitetura do Sistema](#-arquitetura-do-sistema)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Pré-requisitos](#-pré-requisitos)
+- [Instalação e Configuração](#-instalação-e-configuração)
+- [Scripts Disponíveis](#-scripts-disponíveis)
+- [Armazenamento e Privacidade](#-armazenamento-e-privacidade)
+- [Avisos e Dados de Demonstração](#-avisos-e-dados-de-demonstração)
+- [Licença](#-licença)
 
 ---
 
